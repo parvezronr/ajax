@@ -1,0 +1,8 @@
+  <tr id="<%= employe.id %>">
+        <td><%= employe.name %></td>
+        <td><%= employe.email %></td>
+        <td><%= employe.age %></td>
+        <td><%= link_to 'Show', employe, remote: true %></td>
+        <td><%= link_to 'Edit', edit_employe_path(employe), remote: true %></td>
+        <td><%= link_to 'Destroy', employe, method: :delete, remote: true, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
